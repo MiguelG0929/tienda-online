@@ -1,0 +1,45 @@
+Shopping Cart Logic
+===================
+
+1. Cart Structure:
+   - Items: Array of products in cart
+   - Total: Sum of all item prices
+   - Quantity: Total number of items
+
+2. Core Operations:
+
+   ADD_ITEM(product, quantity):
+   - Check if product already exists
+   - If exists: increase quantity
+   - If new: add to items array
+   - Update total price
+
+   REMOVE_ITEM(productId):
+   - Find product by ID
+   - Remove from items array
+   - Update total price
+
+   UPDATE_QUANTITY(productId, newQuantity):
+   - Find product by ID
+   - Update quantity
+   - If quantity = 0: remove item
+   - Update total price
+
+   GET_CART():
+   - Return all items
+   - Return total price
+   - Return item count
+
+   CLEAR_CART():
+   - Empty items array
+   - Reset total to 0
+
+3. Example Data:
+   {
+     "items": [
+       { "id": 1, "name": "Product A", "price": 29.99, "quantity": 2 },
+       { "id": 2, "name": "Product B", "price": 15.50, "quantity": 1 }
+     ],
+     "total": 75.48,
+     "itemCount": 3
+   }
