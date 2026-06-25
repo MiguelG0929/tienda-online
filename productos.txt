@@ -1,0 +1,3 @@
+Producto A - 100€
+Producto B - 200€
+Producto C - 300€
